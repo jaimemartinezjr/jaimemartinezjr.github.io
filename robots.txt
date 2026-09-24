@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jaimemartinezjr.github.io/sitemap.xml

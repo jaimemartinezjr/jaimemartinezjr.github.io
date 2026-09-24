@@ -1,0 +1,22 @@
+title: Jaime Martinez Jr.
+description: MBA Candidate at UC Berkeley Haas and transitioning U.S. Army Intelligence Officer.
+url: "https://jaimemartinezjr.github.io"
+baseurl: ""
+github_username: jaimemartinezjr
+email: jaime_martinez@berkeley.edu
+timezone: America/Los_Angeles
+markdown: kramdown
+permalink: pretty
+lang: en-US
+logo: /assets/favicon.svg
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - PLAN.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

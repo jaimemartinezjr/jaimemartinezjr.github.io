@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% assign page_title = page.title | default: site.title %}
+  {% assign page_description = page.description | default: site.description %}
+  <title>{{ page_title }} — {{ site.title }}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="author" content="{{ site.title }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <meta property="og:title" content="{{ page_title }} — {{ site.title }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/favicon.svg' | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page_title }} — {{ site.title }}">
+  <meta name="twitter:description" content="{{ page_description | escape }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
