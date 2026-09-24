@@ -9,6 +9,7 @@
       <span aria-hidden="true">Menu</span>
     </button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a class="{% if page.url == '/' %}is-active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
       {% assign nav_items = "About|about,Experience|experience,Contact|contact" | split: "," %}
       {% for item in nav_items %}
         {% assign parts = item | split: "|" %}

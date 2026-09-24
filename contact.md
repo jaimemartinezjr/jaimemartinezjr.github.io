@@ -14,8 +14,8 @@ description: Contact Jaime Martinez Jr. by email.
 
 <section class="contact-details shell">
   <div>
-    <span class="detail-label">Based in</span>
-    <p>Berkeley, California</p>
+    <span class="detail-label">Affiliation</span>
+    <p>UC Berkeley Haas</p>
   </div>
   <div>
     <span class="detail-label">Currently</span>
