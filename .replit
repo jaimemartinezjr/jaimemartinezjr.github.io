@@ -3,3 +3,31 @@ modules = ["nodejs-24", "python-base-3.13"]
 [nix]
 channel = "stable-25_05"
 packages = ["jekyll"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Portfolio Preview"
+
+[[workflows.workflow]]
+name = "Portfolio Preview"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "jekyll serve --host 0.0.0.0 --port 5000 --destination /tmp/jaime-portfolio-change1 --no-watch"
+waitForPort = 5000
+
+[[ports]]
+localPort = 5000
+externalPort = 80
