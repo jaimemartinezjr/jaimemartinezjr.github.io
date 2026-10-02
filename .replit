@@ -25,7 +25,7 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "jekyll serve --host 0.0.0.0 --port 5000 --destination /tmp/jaime-portfolio-change1 --no-watch"
+args = "jekyll build --destination /tmp/jaime-portfolio-change1 && cp /tmp/jaime-portfolio-change1/change1-preview/index.html /tmp/jaime-portfolio-change1/index.html && python3 -m http.server 5000 --bind 0.0.0.0 --directory /tmp/jaime-portfolio-change1"
 waitForPort = 5000
 
 [[ports]]
