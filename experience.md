@@ -40,5 +40,5 @@ description: Jaime Martinez Jr.'s leadership experience and professional backgro
 <section class="experience-close shell">
   <p class="eyebrow">What carries forward</p>
   <p class="close-quote">The ability to build teams, navigate ambiguity, and move meaningful work forward.</p>
-  <a class="arrow-link" href="{{ '/contact/' | relative_url }}">Start a conversation <span aria-hidden="true">↗</span></a>
+  <a class="arrow-link" href="mailto:{{ site.email }}">Email Jaime <span aria-hidden="true">↗</span></a>
 </section>
