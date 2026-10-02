@@ -16,5 +16,5 @@
   <meta name="twitter:title" content="{{ page_title }} — {{ site.title }}">
   <meta name="twitter:description" content="{{ page_description | escape }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 </head>

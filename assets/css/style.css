@@ -142,13 +142,11 @@ em { color: var(--forest); font-family: var(--serif); font-weight: 400; }
 
 @media (max-width: 760px) {
   :root { --shell: min(100% - 32px, 600px); }
-  .header-inner { min-height: 72px; }
-  .menu-toggle { display: block; }
-  .site-nav { display: none; position: absolute; z-index: 5; left: 16px; right: 16px; top: 72px; flex-direction: column; align-items: stretch; gap: 0; padding: 10px; border: 1px solid var(--line); background: var(--paper-bright); box-shadow: 0 16px 30px rgba(23, 34, 31, .12); }
-  .site-nav.is-open { display: flex; }
-  .site-nav a { padding: 12px; }
+  .header-inner { min-height: 72px; gap: 12px; }
+  .wordmark { flex-shrink: 0; gap: 8px; font-size: 12px; white-space: nowrap; }
+  .site-nav { flex-shrink: 0; gap: 0; font-size: 10px; }
+  .site-nav a { padding: 0; white-space: nowrap; }
   .site-nav a:not(.nav-email)::after { display: none; }
-  .nav-email { margin-top: 6px; text-align: center; }
   .hero { display: block; padding-top: 82px; padding-bottom: 85px; }
   h1 { font-size: clamp(3rem, 14vw, 5.2rem); }
   .hero-aside { margin-top: 65px; padding-top: 20px; padding-left: 18px; }

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ '/assets/css/change1-preview.css' | relative_url }}">
+  <body class="change1-preview">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Jaime Martinez Jr. homepage">
+          <span class="wordmark-mark" aria-hidden="true">JM</span>
+          <span class="wordmark-name">Jaime Martinez Jr.</span>
+        </a>
+        <nav class="change1-nav" aria-label="Preview navigation">
+          <a href="{{ '/experience/' | relative_url }}">Full background <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="site-main">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
