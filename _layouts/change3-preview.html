@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  {% include head.html %}
+  <body class="change3-preview">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Jaime Martinez Jr. homepage">
+          <span class="wordmark-mark" aria-hidden="true">JM</span>
+          <span class="wordmark-name">Jaime Martinez Jr.</span>
+        </a>
+        <nav class="site-nav change3-nav" aria-label="Page sections">
+          <a href="#career-history">Career history</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="site-main">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+  </body>
+</html>

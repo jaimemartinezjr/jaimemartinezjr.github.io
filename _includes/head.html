@@ -17,4 +17,5 @@
   <meta name="twitter:description" content="{{ page_description | escape }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+  {% if page.layout == 'change3-preview' %}<link rel="stylesheet" href="{{ '/assets/css/change3-preview.css' | relative_url }}">{% endif %}
 </head>
