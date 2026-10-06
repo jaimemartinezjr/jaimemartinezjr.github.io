@@ -1,0 +1,39 @@
+.change2-nav {
+  gap: 22px;
+}
+
+.change2-nav a {
+  white-space: nowrap;
+}
+
+.change2-nav a:hover,
+.change2-nav a:focus-visible {
+  color: var(--forest);
+}
+
+@media (max-width: 760px) {
+  .change2-preview .header-inner {
+    gap: 8px;
+  }
+
+  .change2-preview .wordmark {
+    gap: 6px;
+    font-size: 11px;
+  }
+
+  .change2-nav {
+    gap: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .change2-preview .wordmark-name {
+    display: none;
+  }
+
+  .change2-nav {
+    gap: 8px;
+    font-size: 9px;
+  }
+}

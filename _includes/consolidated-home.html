@@ -25,7 +25,7 @@
   </div>
 </section>
 
-<section class="change1-about shell">
+<section class="change1-about shell"{% if include.anchors %} id="about"{% endif %}>
   <div class="change1-section-label">
     <span class="eyebrow">A little about me</span>
     <span class="change1-index" aria-hidden="true">01 / 03</span>
@@ -37,7 +37,7 @@
   </div>
 </section>
 
-<section class="change1-experience">
+<section class="change1-experience"{% if include.anchors %} id="work-experience"{% endif %}>
   <div class="shell change1-experience-inner">
     <div class="change1-section-label">
       <span class="eyebrow">Experience</span>
@@ -60,7 +60,7 @@
   <p class="change1-personal-copy">Proud husband and father. Golf (even as a high handicapper), fitness, and lifelong learning.</p>
 </section>
 
-<section class="change1-contact shell">
+<section class="change1-contact shell"{% if include.anchors %} id="contact"{% endif %}>
   <div>
     <p class="eyebrow">Have a question or an idea?</p>
     <h2>Let’s start<br><em>a conversation.</em></h2>
