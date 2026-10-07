@@ -47,6 +47,29 @@
   border-left: 1px solid var(--line);
 }
 
+.change1-home-portrait {
+  width: min(100%, 230px);
+  margin: 0 0 21px;
+}
+
+.change1-home-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 38%;
+  border: 1px solid var(--line);
+}
+
+.change1-home-portrait figcaption {
+  margin-top: 8px;
+  color: var(--ink-soft);
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
 .change1-note p {
   margin: 18px 0 0;
   color: var(--forest);
